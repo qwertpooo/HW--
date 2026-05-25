@@ -21,9 +21,12 @@
         "狗",
         "豬",
       ];
+      const targetAnimals = ["雞", "虎", "羊"];
 
-      zoo.sort((a, b) => a - b);
-      console.log(zoo);
+      // 使用 filter 把符合條件的抓出來
+      const result = zoo.filter((animal) => targetAnimals.includes(animal));
+
+      console.log(result); // 結果會印出: ['', '龍', '狗']
     </script>
   </body>
 </html>
